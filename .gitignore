@@ -1,0 +1,10 @@
+/Debug
+/Release
+/x64
+/.vs
+/*.user
+/a.out
+*.zip
+/zipwriter
+/*.exe
+/*.obj
