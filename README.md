@@ -18,7 +18,7 @@ zipwriter_t zip;
 ZIPWriterInitialize(&zip);
 ```
 
-Then, for each file you would like to store in the .ZIP file, you will need a file context and to write the start of a ZIP _local header_ for the file (the filename pointer must remain valid, and the contents unchanged until after the central directory entry has been written):
+Then, for each file you would like to store in the .ZIP file, you will need a file context and to write the start of a ZIP _local header_ for the file (the file context object including the same filename string, must persist until after the corresponding central directory entry has been written):
 
 ```c
 zipwriter_file_t file1;
